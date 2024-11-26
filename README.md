@@ -9,7 +9,6 @@
 
 3. Paste `VITE_API_URL=https://restcountries.com/v3.1` inside the `.env` file
 
-4. Run this command ```bash
-                    npm install && npm run dev
-                    ```
+4. Run this command ``` npm install && npm run dev ```
+
 5. Now you're good to go

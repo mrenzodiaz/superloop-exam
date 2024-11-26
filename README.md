@@ -1,4 +1,4 @@
-# Superloop Technical Exam
+# Superloop Exam
 
 ## Prerequisites
 

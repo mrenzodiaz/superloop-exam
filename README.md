@@ -1,5 +1,10 @@
 # Superloop Technical Exam
 
+## Prerequisites
+
+### Install Node JS v18 or latest
+Refer to https://nodejs.org/en/ to install nodejs
+
 
 ## Cloning and Running the Application in local
 

@@ -8,7 +8,7 @@ Refer to https://nodejs.org/en/ to install nodejs
 
 ## Cloning and Running the Application in local
 
-1. Clone the project into your local machine
+1. Clone the project into your local machine, run `git clone https://github.com/mrenzodiaz/superloop-exam.git`
 
 2. Create `.env` file into the root directory of the app
 

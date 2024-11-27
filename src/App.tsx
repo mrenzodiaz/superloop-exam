@@ -62,18 +62,20 @@ function App() {
       <div className="text-gray-700 dark:text-gray-300 h-full w-full">
         <Header />
         <div className="container mx-auto py-4">
-          <h1 className="text-base font-semibold my-4 text-center md:text-left">
-            CHOOSE A COUNTRY TO SEE ITS DETAILS
-          </h1>
-          <div className="text-center md:text-left">
-            <Combobox
-              options={countryNames.map(({ name: { common } }) => ({
-                value: common,
-                label: common,
-              }))}
-              value={value}
-              onChange={(value: string) => setValue(value)}
-            />
+          <div className="flex flex-col items-center">
+            <h1 className="text-2xl font-semibold my-4 text-center md:text-left">
+              CHOOSE A COUNTRY TO SEE ITS DETAILS
+            </h1>
+            <div className="text-center md:text-left">
+              <Combobox
+                options={countryNames.map(({ name: { common } }) => ({
+                  value: common,
+                  label: common,
+                }))}
+                value={value}
+                onChange={(value: string) => setValue(value)}
+              />
+            </div>
           </div>
           {selectedCountry && !isFetching ? (
             <CountryDetails selectedCountry={selectedCountry} />

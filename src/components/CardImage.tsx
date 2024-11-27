@@ -24,7 +24,7 @@ export function CardImage({ title, description, url, alt }: CardImageProps) {
         )}
         <div className="p-4 space-y-2">
           <h3 className="text-xl font-semibold">{title}</h3>
-          <p>{description}</p>
+          <p className="text-justify">{description}</p>
         </div>
       </div>
     </div>

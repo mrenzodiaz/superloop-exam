@@ -38,7 +38,8 @@ export function Combobox({ options, value, onChange }: ComboboxProps) {
           variant="secondary"
           role="combobox"
           aria-expanded={open}
-          className="w-[300px] justify-between"
+          className="w-[330px] justify-between"
+          size="lg"
         >
           {value
             ? options.find((option) => option.value === value)?.label
@@ -46,7 +47,7 @@ export function Combobox({ options, value, onChange }: ComboboxProps) {
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[300px] p-0">
+      <PopoverContent className="w-[330px] p-0">
         <Command>
           <CommandInput placeholder="Type country name..." />
           <CommandEmpty>No country found.</CommandEmpty>

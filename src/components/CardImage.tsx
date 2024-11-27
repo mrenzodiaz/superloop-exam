@@ -17,7 +17,7 @@ export function CardImage({
 }: CardImageProps) {
   return (
     <div className="w-full max-w-md mx-auto">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden dark:shadow-secondary/80 transition-all duration-300 hover:shadow-lg dark:bg-background">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden dark:shadow-secondary/80 transition-all duration-300 hover:shadow-lg dark:bg-background border border-border/90 dark:border-border">
         {url ? (
           <img
             src={url}
@@ -34,7 +34,7 @@ export function CardImage({
             <span className="text-left md:text-center">NO IMAGE AVAILABLE</span>
           </div>
         )}
-        <div className="p-4 space-y-2">
+        <div className="p-4 space-y-2 border-t border-border/90 dark:border-border">
           <h3 className="text-xl font-semibold">{title}</h3>
           <p className="text-justify">{description}</p>
         </div>

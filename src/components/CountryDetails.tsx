@@ -42,6 +42,7 @@ export const CountryDetails = ({ selectedCountry }: CountryDetailsProps) => {
           description="A country flag is a symbol that represents a nation. It typically consists of a distinctive design, pattern, or combination of colors that hold specific cultural, historical, or political significance for the country it represents. Flags are often used for identification, ceremonial purposes, and expressions of national pride or unity."
           url={selectedCountry.flags.svg}
           alt={'country flag'}
+          isFlag
         />
       </div>
       <div className="basis-2/6 flex flex-col">
@@ -50,6 +51,7 @@ export const CountryDetails = ({ selectedCountry }: CountryDetailsProps) => {
           description={`A country's coat of arms is a visual design on a shield that represents the country and is a central part of its state emblem. Coats of arms are unique to a country, family, individual, organization, school, or corporation.`}
           url={selectedCountry.coatOfArms.svg}
           alt={'coat of arms'}
+          isFlag={false}
         />
       </div>
     </div>

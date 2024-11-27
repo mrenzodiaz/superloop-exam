@@ -48,7 +48,7 @@ export function Combobox({ options, value, onChange }: ComboboxProps) {
       </PopoverTrigger>
       <PopoverContent className="w-[300px] p-0">
         <Command>
-          <CommandInput placeholder="Search country..." />
+          <CommandInput placeholder="Type country name..." />
           <CommandEmpty>No country found.</CommandEmpty>
           <CommandList>
             <CommandGroup>

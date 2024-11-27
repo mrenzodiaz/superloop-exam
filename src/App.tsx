@@ -59,7 +59,7 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="text-primary dark:text-white h-full w-full">
+      <div className="text-gray-700 dark:text-gray-300 h-full w-full">
         <Header />
         <div className="container mx-auto py-4">
           <h1 className="text-base font-semibold my-4 text-center md:text-left">

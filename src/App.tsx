@@ -61,7 +61,7 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="text-gray-700 dark:text-gray-300 h-full w-full">
         <Header />
-        <div className="container mx-auto py-4">
+        <div className="container mx-auto py-10">
           <div className="flex flex-col items-center">
             <h1 className="text-2xl font-semibold my-4 text-center md:text-left">
               CHOOSE A COUNTRY TO SEE ITS DETAILS

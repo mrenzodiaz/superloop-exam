@@ -12,18 +12,18 @@ export const CountryDetails = ({ selectedCountry }: CountryDetailsProps) => {
   };
 
   return (
-    <div className="flex flex-col mt-14 flex-1 gap-8 md:flex-row mx-6 md:mx-auto">
-      <div className="flex flex-col text-left basis-2/6 gap-4">
+    <div className="flex flex-col mt-14 flex-1 gap-8 lg:flex-row mx-6 lg:mx-auto">
+      <div className="flex flex-col text-left basis-2/6 gap-4 max-w-[480px] lg:max-w-full mx-auto lg:mx-0">
         <h1 className="text-4xl font-bold">{selectedCountry.name.common}</h1>
-        <div className="flex gap-2 items-center text-xl">
+        <div className="flex gap-2 items-start text-xl">
           <b>Official Name:</b>
           <span>{selectedCountry.name.official}</span>
         </div>
-        <div className="flex gap-2 items-center text-xl">
+        <div className="flex gap-2 items-start text-xl">
           <b>Currency Name:</b>
           <span>{getCurrencyName(selectedCountry.currencies) ?? 'N/A'}</span>
         </div>
-        <div className="flex gap-2 items-center text-xl">
+        <div className="flex gap-2 items-start text-xl">
           <b>Currency Symbol:</b>
           <span>
             {selectedCountry.currencies[
@@ -31,8 +31,8 @@ export const CountryDetails = ({ selectedCountry }: CountryDetailsProps) => {
             ]?.symbol ?? 'N/A'}
           </span>
         </div>
-        <div className="flex gap-2 items-center text-xl">
-          <b>Side of the road they drive on:</b>
+        <div className="flex gap-2 items-start text-xl">
+          <b>Driving Side:</b>
           <span className="capitalize">{selectedCountry.car.side}</span>
         </div>
       </div>
